@@ -1,0 +1,57 @@
+<!--
+Colby Mei
+Nov 2023
+GUI1
+-->
+
+<html>
+<head>
+  <title>Multiplication Table</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"/>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <h1>Dynamic Multiplication Table</h1>
+
+    <h2>Please enter the ranges you would like for your table.</h2>
+
+    <form id="colsrows" method="get">
+      <label>Minimum Column Value (From -50 to 50)</label> <input type="text" id="mincols" name="mincols"/><br>
+      <div id="slider1"></div><br>
+      <label>Maximum Column Value (From -50 to 50)</label> <input type="text" id="maxcols" name="maxcols"/><br>
+      <div id="slider2"></div><br>
+      <p class="column-error"></p>
+
+      <label>Minimum Row Value (From -50 to 50)</label> <input type="text" id="minrows" name="minrows"/><br>
+      <div id="slider3"></div><br>
+      <label>Maximum Row Value (From -50 to 50)</label> <input type="text" id="maxrows" name="maxrows"/><br>
+      <div id="slider4"></div><br>
+      <p class="row-error"></p>
+
+      <button type="button" id="button" disabled="true">Generate Table</button>
+    </form>
+    <div id="tablearea">
+      <table id="table">
+
+      </table>
+    </div>
+
+    <div id="tabs">
+      <ul>        
+      </ul>
+    </div>
+    <button id="rem-tab">Remove Tab #:</button>
+    <input type="text" id="tabrem" name="tabrem"/><br>
+    <button id="destroy">Destroy</button><br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="js/myScript.js"></script>
+</body>
+
+
+</html>
